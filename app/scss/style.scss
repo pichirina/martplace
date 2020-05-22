@@ -1,18 +1,126 @@
-html {
-    box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-    padding: 0;
-}
+@import 'vars';
+@import 'global';
 
-body {
-    background-color: blue;
-}
 
-.box{
+.header__top {
+    background-color: #eef1f3;
+}
+.header__top-inner {
     display: flex;
-    transition: all .3s;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    
 }
+
+.header__logo-img {
+        background-image: url(../images/logo.png);
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 202px;
+}
+
+.header__btn {
+    margin-left: auto;
+    margin-right: 51px;
+    background-color: $btn-blue;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 12px 19px;
+    width: 140px;
+    text-align: center;
+    border-radius: 25px;
+
+        a {
+            font-size: 13px;
+            font-weight: 400;
+            color: #fff;
+            text-decoration: none;
+        }
+}
+
+.header__personal {
+    a {
+        font-size: 16px;
+        color: #333;
+        text-decoration: none;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    p {
+        font-size: 15px;
+        color: $btn-blue;
+        margin: 0;
+    }
+}
+
+.header__menu-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+
+
+.header__menu-list {
+    li {
+        display: inline-block;
+    
+
+        & + li {
+            margin-left: 34px;
+        }
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 15px;
+        color: #333;
+        text-transform: uppercase;
+    }
+}
+
+.header__search {
+    margin: 17px 0 17px auto;
+    
+}
+
+
+.header__search-form {
+     width: 360px;
+     position: relative;
+    input {
+       display: block;
+       width: 100%;
+       border-radius: 23px;
+       height: 46px;
+       border: solid 1px #898f96;
+       font-size: 15px;
+       font-weight: 400;
+       padding-left: 24px;
+       padding-right: 94px;
+    }
+    
+    :focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        font-weight: 400; 
+        color: #898f96;
+    }
+
+    button {
+        background-color: $btn-blue;
+        width: 70px;
+        height: 46px;
+        position: absolute;
+        border: none;
+        border-radius: 23px;
+        z-index: 2;
+        right: 0;
+        top: 0;
+    }
+}
+    
