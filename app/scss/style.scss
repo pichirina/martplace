@@ -322,6 +322,113 @@
 
 //end 3 items section
 
+
+//start weekly product section
+
+.weekly__product {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    background-color: #eff1f5;
+
+    &__title{
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        font-size: 30px;
+        padding: 40px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+
+    &-slider-img {
+        width: 555px;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+
+    &-slider-right {
+        background-color: #fff;
+        height: 450px;
+        position: relative;
+        
+    }
+
+    &-slider-item {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    &-slider-right-title{
+        padding: 51px 51px 20px 51px;
+        font-size: 24px;
+    }
+
+    .product__item-top {
+        padding: 0 51px 25px 51px;
+    }
+
+    &-slider-right-text {
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0 51px 38px 51px;
+    }
+
+    .weekly__product-buttons {
+        padding: 0 51px 25px 51px;
+
+        button {
+            background-color: #f1f3f6;
+            border: none;
+            border-radius: 23px;
+            color: #868c96;
+            line-height: 28px;
+            padding: 0 14px 0 18px;
+
+        }
+    }
+
+    .product__item-bottom {
+        position: absolute;
+        bottom: 0;
+        left: 49px;
+        width: 485px;
+        padding: 15px 0px;
+    }
+
+    .product__item-price {
+        background-color: $btn-blue;
+        color: #fff;
+    }
+
+    .product__item-purchases {
+        margin-left: 19px;
+    }
+
+    .product__item-purchases::before {
+        margin-right: 9px;
+    }
+   
+    &-slider__arrows {
+        width: 110px;
+        height: 45px;
+        background-color: $violet;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+}
+
+
+
+
+
+//end weekly product section
+
+
 //start products section
 
 .products {
@@ -475,7 +582,7 @@
     
         &-price {
             color: #0674ec;
-            background-color: #e6f1fd;
+            background-color: #e6f1fd; 
             font-size: 15px;
             line-height: 30px;
             padding: 0 17px;
@@ -494,6 +601,9 @@
             height: 14px;
     }
 
+        &-star {
+            margin-left: 15px;
+        }
     
         &-purchases {
             color: $btn-blue;
@@ -529,3 +639,63 @@
 
 //end products section
 
+//start product slider 
+
+
+.product-slider {
+    padding: 120px 0;
+    background-color: #eff1f5;
+
+  
+    &__title {
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        font-size: 30px;
+        padding: 40px 30px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+  
+
+    &__arrows{
+        width: 110px;
+        height: 45px;
+        background-color: $btn-blue;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        position: relative;
+}
+    &-arrow--left{
+        background-image: url(../images/arrow-left.png);
+        width: 8px;
+        height: 14px;
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 25px;
+        padding: 0;
+    }
+
+    &-arrow--right {
+        background-image: url(../images/arrow-right.png);
+        width: 8px;
+        height: 14px;
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 25px;
+        padding: 0;
+    }
+    .slick-slide {
+        margin-right: 25px;
+        width: 361px !important;
+    }
+
+}
+
+//end product slider 
