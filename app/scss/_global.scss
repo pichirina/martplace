@@ -7,10 +7,10 @@ html {
     box-sizing: inherit;
 }
 
-$btn-blue: #0674ec; 
+$btn-blue: #0674ec;
 $btn-grey: #747b86;
 $txt-grey: #555555; 
-$violet: #7347c1;
+$violet: #7347c1;  
 
 
 a {
@@ -34,4 +34,16 @@ body {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+@media (max-width: 720px) {
+    .container-fluid {
+       padding: 0 15px;
+    }
 }
