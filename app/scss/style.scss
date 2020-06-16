@@ -676,6 +676,8 @@
 }
  // end header
 
+
+
  //start breadcrumbs
 
  .breadcrumbs {
@@ -2985,6 +2987,147 @@
 
  
 //end single-product
+
+//start login pop-up
+
+#modal {
+    background-color: #fff;
+    border-radius: 4px;
+    min-width: 555px;
+
+    .login__header {
+        text-align: center;
+        border-bottom: 1px solid #e8ebf0;
+        padding: 28px;
+    }
+
+    .login__title {
+        font-size: 26px;
+        margin-bottom: 28px;
+     }
+
+    .login__text {
+        font-size: 16px;
+        color: #555555;
+    }
+    input {
+        display: block;
+        width: 100%;
+    }
+
+    form {
+        padding: 29px 51px 60px 51px;
+    }
+
+    .login__title-input {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 14px;
+    }
+
+    input {
+        border: none;
+        background-color: #f4f5f8;
+        padding: 18px 21px;
+        margin-bottom: 30px;
+        outline: #fff;
+    }
+
+    .login__button {
+        border: none;
+        background-color: $btn-blue;
+        color: #fff;
+        font-size: 15px;
+        padding: 18px 57px;
+        border-radius: 28px;
+        margin-bottom: 40px;
+        cursor: pointer;
+        outline: inherit;
+    }
+}
+
+ 
+.fancybox-content  {
+     padding: 0;
+}
+
+.login__container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+   
+    user-select: none;
+    margin-bottom: 30px;
+  }
+  
+  .login__container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: none;
+  }
+  
+  .login__container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  .login__container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+ 
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .login__container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .login__container .checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .login__proposal {
+      display: flex;
+
+      a {
+          color: $btn-blue;
+          cursor: pointer;
+      }
+
+      .login__proposal-password {
+          margin-right: 37px;
+      }
+  }
+
+//end login pop-up
+
+
+
 
   
 

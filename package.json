@@ -25,6 +25,7 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "mixitup": "^3.3.1"
   }
 }
