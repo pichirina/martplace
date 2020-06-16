@@ -3151,7 +3151,38 @@
 
 //end 404
 
+// start terms and conditions
 
+.wrapper.terms__page {
+    background-color: #eff1f5;
+}
+
+.terms__page-inner {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    margin: 60px 0 120px 0;
+    padding-bottom: 100px;
+
+    h3 {
+    border-bottom: 1px solid #eff1f5;
+    padding: 40px 30px 30px 30px;
+    font-size: 24px;
+    font-weight: 400;
+    }
+
+    p {
+    font-size: 16px;
+    line-height: 30px;
+    color: $txt-grey;
+    padding: 0 30px;
+    }
+}
+
+
+// end terms and conditions
+
+  
   
 
 
