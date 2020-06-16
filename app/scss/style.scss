@@ -3126,7 +3126,30 @@
 
 //end login pop-up
 
+//start 404
+.page__404 {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
 
+    &-title {
+        font-size: 30px;
+        margin-top: 55px;
+        margin-bottom: 35px;
+    }
+
+    &-link {
+        font-size: 15px;
+        color: #fff;
+        background-color: $btn-blue;
+        padding: 20px 55px;
+        border-radius: 27px;
+        cursor: pointer;
+    }
+}
+
+
+//end 404
 
 
   
