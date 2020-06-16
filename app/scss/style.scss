@@ -3229,7 +3229,77 @@
 
 //end favourites page
 
-  
+//start how it works page
+
+.breadcrumbs.how-it-works{
+    padding-bottom: 15px;
+
+    .breadcrumbs-list {
+        text-align: center;
+    }
+
+    .breadcrumbs-title {
+        line-height: 50px;
+    }
+
+    .breadcrumbs-title.thin {
+        font-weight: 400;
+        margin-bottom: 55px;
+    }
+}
+
+.how-it-works__account-inner {
+    padding: 98px 0;
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 16px;
+        color: $btn-grey;
+        line-height: 30px;
+    }
+
+    button {
+        border: none;
+        color: $btn-blue;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        padding: 17px 37px;
+        border-radius: 27px;
+        margin-top: 10px;
+        cursor: pointer;
+        outline: none;
+    }
+
+    button:hover {
+        background-color: $btn-blue;
+        color: #fff;
+    }
+
+}
+
+.how-it-works.upload-products {
+    background-color: #eff1f5;
+
+    img {
+        margin-left: 225px;
+    }
+}
+
+.how-it-works.account,
+.how-it-works.money {
+    img {
+        margin-right: 225px;
+    }
+}
+
+//end how it works page
+
 
 
 
