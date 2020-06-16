@@ -3352,6 +3352,32 @@
 }
 //end login page
 
+//start create account page
+.login__page-text.account {
+    text-align: center;
+    .login__page-title {
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+
+.login__page-button {
+     margin-bottom: 40px;
+}
+
+.login__page-propose {
+    color: #898f96;
+
+    a {
+        color: $btn-blue;
+        cursor: pointer;
+    }
+}
+
+
+//end create account page
+
+
 
 
 
