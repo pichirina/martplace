@@ -3378,6 +3378,135 @@
 //end create account page
 
 
+//start contact page
+.breadcrumbs.contact {
+    text-align: center;
+
+    .breadcrumbs-title {
+        margin-bottom: 30px;
+    }
+}
+
+.contact__page {
+    background-color: #eff1f5;
+    padding-top: 115px;
+    padding-bottom: 120px;
+}
+
+.contact__page-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact__page-item {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    width: 360px;
+    padding: 50px 0;
+    margin-bottom: 50px;
+
+    & + .contact__page-item {
+        margin-left: 30px;
+    }
+
+    .lnr {
+        font-size: 48px;
+        color: $btn-blue;
+    }
+
+    &-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 52px;
+        margin-bottom: 40px;
+    }
+
+    a {
+        display: block;
+        color: #555555;
+        line-height: 30px;
+    }
+
+    &-info {
+        color: #555555;
+        line-height: 30px;
+    }
+}
+
+.contact__page-item-form {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+
+    &-title {
+        text-align: center;
+        font-size: 24px;
+        padding: 60px 0 30px 0;
+        border-bottom: 1px solid #eceff2;
+        margin-bottom: 40px;
+    }
+}
+
+.contact__page-item-form-inputs {
+    padding: 0 196px 60px 196px;
+    text-align: center;
+
+    input,
+    textarea {
+        border: 1px solid #eceff2;
+        padding: 18px;
+        margin-bottom: 30px;
+
+    & + input {
+        margin-left: 30px;
+    }
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 130px;
+        resize: none;
+    }
+
+    button {
+        background-color: $btn-blue;
+        color: #fff;
+        border: none;
+        padding: 17px 35px;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.contact__page-item-form-input {
+    display: flex;
+    
+    .input__small {
+        width: 50%;
+    }
+}
+
+//end contact page
+
+// start page map
+.page__map {
+    background-color: #e3e6ec;
+    height: 400px;
+}
+
+.page__map-area {
+    position: relative;
+
+    img {
+        position: absolute;
+        right:293px;
+        top: 187px;
+    }
+}
+// end page map
 
 
 
