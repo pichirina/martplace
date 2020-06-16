@@ -3300,10 +3300,61 @@
 
 //end how it works page
 
+//start login page
+
+.login__page {
+    background-color: #eff1f5;
+    display: flex;
+    justify-content: center;
+    padding: 70px 0 120px 0;
+}
+
+.login__page-item {
+    background-color: #fff;
+    width: 556px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.login__page-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555555;
+    border-bottom: 1px solid #eceff2;
+    padding: 60px 49px 30px 49px;
+}
+
+.login__page-form {
+    padding: 40px 49px 60px 49px;
+
+    input {
+        width: 100%;
+        margin-bottom: 33px;
+        background-color: #f4f5f8;
+        border: none;
+        padding: 17px 20px;
+    }
+
+    button {
+        background-color: $btn-blue;
+        color: #fff;
+        border: none;
+        padding: 20px 53px;
+        border-radius: 28px;
+        cursor: pointer;
+        outline: none;
+    }
+}
+
+.login__page-title {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+//end login page
+
 
 
 
 @import 'media';
 
 
-  
