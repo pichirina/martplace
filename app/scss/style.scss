@@ -2053,6 +2053,11 @@
     &-left{
         display: flex;
         font-size: 16px;
+        cursor: pointer;
+
+        a {
+            color: #747b86;
+        }
 
         &__item{
         padding-right: 40px;
@@ -2061,7 +2066,14 @@
             color: $btn-blue;
         }
         }
-    }
+    } 
+        button { 
+            border: none;
+            background-color: transparent;
+            outline: none;
+            cursor: pointer;
+        }
+
 
     &-right{
         display: flex;
@@ -2081,11 +2093,7 @@
             border: 1px solid #eceff2;
             padding: 11px 20px;
          
-        button{ 
-            border: none;
-            background-color: transparent;
-            outline: none;
-            }
+       
         }
     }
 
@@ -2994,6 +3002,7 @@
     background-color: #fff;
     border-radius: 4px;
     min-width: 555px;
+    display: none;
 
     .login__header {
         text-align: center;
@@ -3182,7 +3191,44 @@
 
 // end terms and conditions
 
-  
+//start favourites page
+
+
+.page-filter__title {
+    font-size: 24px;
+    
+    span {
+        font-weight: 500;
+    }
+}
+
+.page-filter-right__filter-by {
+    font-size: 16px;
+    line-height: 32px;
+    border-right: 1px solid #eceff2;
+    border-left: 1px solid #eceff2;
+    padding: 10px 26px 0 30px;
+}
+
+.favourites__items {
+    padding: 80px 0 120px 0;
+    background-color: #eff1f5;
+
+    .pagination {
+    display: flex;
+    justify-content: center;
+    }
+}
+
+.favourites__items-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+//end favourites page
+
   
 
 
