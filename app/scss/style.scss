@@ -3508,8 +3508,127 @@
 }
 // end page map
 
+// start pricing page
+
+.pricing__page {
+    padding-top: 83px;
+    padding-bottom: 120px;
+    background-color: #eff1f5;
+}
+
+.pricing__page-items {
+    display: flex;
+}
+
+.pricing__page-item {
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+    border-radius: 4px;
+    width: 360px;
+    border-top: 3px solid #ff6a6c;
+    padding: 30px;
+
+    &-title {
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        padding-bottom: 28px;
+        border-bottom: 1px solid #eff1f5;
+        margin-bottom: 28px;
+    }
+
+    &-price {
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+        
+    }
+
+    &-cost {
+        font-size: 36px;
+
+        span {
+            font-size: 16px;
+            color: $btn-grey;
+        }
+    }
+
+    &-cost::before {
+        content: "$";
+        font-size: 18px;
+        position: absolute;
+        left: 66px;
+        top: 5px;
+    }
+
+    & + .pricing__page-item {
+        margin-left: 30px;
+    }
+
+    a {
+        background-color: #ff6a6c;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        padding: 19px 0;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+}
+.pricing__page-item-list {
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 37px;
+
+    .bold-text {
+        font-weight: 700;
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    li::before {
+        content: url(../images/ellipse-price.svg);
+        width: 7px;
+        height: 7px;
+        margin-right: 17px;
+    }
+}
+
+.pricing__page-item.business {
+    border-top: 3px solid $btn-blue;
+
+    a {
+        background-color: $btn-blue;
+    }
+}
+
+.pricing__page-item.agency {
+    border-top: 3px solid #feb71d;
+    
+    a {
+        background-color: #feb71d;
+    }
+
+    .pricing__page-item-cost::before {
+        content: "$";
+        font-size: 18px;
+        position: absolute;
+        left: 57px;
+        top: 5px;
+    }
+}
+
+
+
+// end pricing page
+
 
 
 @import 'media';
 
-
+  
