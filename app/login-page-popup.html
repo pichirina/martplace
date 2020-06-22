@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -474,18 +475,42 @@
     <section class="login__page">
         <div class="container">
             <div class="login__page-item">
-                <div class="login__page-text">
-                        Please enter the email address for your account. A verification
-                        code will be sent to you. Once you have received the 
-                        verification code, you will be able to choose a new password 
-                        for your account.
+                <div class="login__page-text account">
+                    <div class="login__page-title">Create Your Account</div>
+                        Please fill the following fields with appropriate information
+                        to register a new MartPlace account.
                 </div>
                 <div class="login__page-form">
+                    <div class="login__page-title">
+                            Your Name
+                    </div>
+                    <input type="text" placeholder="Enter your name..." required>
+
                     <div class="login__page-title">
                             Email Address
                     </div>
                     <input type="text" placeholder="Enter your email address..." required>
-                    <button class="login__page-button" type="submit">Submit Now</button>
+
+                    <div class="login__page-title">
+                            Username
+                    </div>
+                    <input type="text" placeholder="Enter your username..." required>
+
+                    <div class="login__page-title">
+                            Password
+                    </div>
+                    <input type="text" placeholder="Enter your password..." required>
+
+                    <div class="login__page-title">
+                            Confirm Password
+                    </div>
+                    <input type="text" placeholder="Enter your password..." required>
+                    
+                    <button class="login__page-button" type="submit">Register Now</button>
+
+                    <div class="login__page-propose">
+                            Already have an account? <a href="#">Login</a>
+                    </div>
               </div>
             </div>
         </div>
@@ -590,6 +615,7 @@
 </div>
 
 <div id="modal">
+    <div class="login__page-item">
         <div class="login__header">
         <div class="login__title">Welcome Back</div>
         <div class="login__text">You can sign in with your username</div>
@@ -621,6 +647,7 @@
             </div>
 
         </form>
+    </div>
 
     </div>
 

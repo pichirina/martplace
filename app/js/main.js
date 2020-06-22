@@ -27,10 +27,28 @@ $(function(){
     $('.product-slider-inner').slick({
         slidesToShow: 3,
         slidesToScroll: 2,
+        rows: 1,
         centerMode: true,
         appendArrows: ".product-slider__arrows",
          prevArrow: '<button class="product-slider-arrow--left">',
-        nextArrow: '<button class="product-slider-arrow--right">'
+        nextArrow: '<button class="product-slider-arrow--right">',
+        responsive: [
+            {
+                breakpoint: 1159,
+                settings: {
+                    slidesToShow: 2,
+                     slidesToScroll: 2,
+                }
+            },
+
+            {
+                breakpoint: 857,
+                settings: {
+                    slidesToShow: 1,
+                     slidesToScroll: 1,
+                }
+            },
+        ]
     });
 
     $('.weekly__product-slider-inner').slick({
@@ -38,7 +56,25 @@ $(function(){
         slidesToScroll: 1,
         appendArrows: ".weekly__product-slider__arrows",
         prevArrow: '<button class="product-slider-arrow--left">',
-        nextArrow: '<button class="product-slider-arrow--right">'
+        nextArrow: '<button class="product-slider-arrow--right">',
+        responsive: [
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow: 2,
+                     slidesToScroll: 1,
+                }
+            },
+
+            {
+                breakpoint: 840,
+                settings: {
+                    slidesToShow: 1,
+                     slidesToScroll: 1,
+                     centerMode: true,
+                }
+            },
+        ]
      
     });
 

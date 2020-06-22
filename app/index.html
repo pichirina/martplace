@@ -248,7 +248,7 @@
                                         <p class="header__personal-amount">$20.45</p>
                                     </div>
             
-            
+                                    
                                     <div class="user__menu">
             
                                         <ul>
@@ -265,6 +265,7 @@
                                             <li><a href="#"><span class="lnr lnr-exit"></span>Logout</a></li>
                                         </ul>
                                     </div>
+                               
                                 
                                 </div>
                                 
@@ -486,27 +487,34 @@
 
     </section>
 
+   
     <section class="second__section">
 
         <div class="container">
 
-            <form class="main__search-form">
+              <form class="main__search-form">
 
 
                 <div class="shadow__box1"></div>
                 <div class="shadow__box2"></div>
 
-
+                <div class="form__inner">
                 <input type="text" placeholder="Search your products..." required>
-                <div class="main__search-categories">All Categories</div>
+                <div class="main__search-categories">
+                    <div> All Categories </div>
+                    <button class="main__search-categories-btn" type="button"><span class="lnr lnr-chevron-down"></span></button>
+                </div>
+                
                 <button type="submit">
                     Search Now
                 </button>
-            </form>
+            </div>
+
+            </form>  
         </div>
 
 
-        <div class="second__section-inner">
+         <div class="second__section-inner">
             <div class="container">
 
                 <div class="second__section-items">
@@ -551,10 +559,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> 
     </section>
 
-    <section class="weekly__product">
+      <section class="weekly__product">
         <div class="container">
 
             <div class="weekly__product__title">
@@ -759,17 +767,22 @@
 
                 </div>
             </div>
+
+       
         </div>
-    </section>
+    </section> 
 
 
-    <section class="products">
+     <section class="products">
         <div class="container">
 
 
             <div class="products__title-inner">
                 <div class="products__title">Newest Release Products</div>
-                <div class="products__filter">Filter by:</div>
+                <div class="products__filter">Filter by:
+                        <a class="filter__dots" href="#"></a>
+                </div>
+            
             </div>
 
             <div class="products__inner">
@@ -788,10 +801,19 @@
                 <div class="products__inner-box">
 
                     <div class="product__item mix category-plugins" data-order="1">
-                        
-                        <a class="product__item-img" href="#"
-                            style="background-image: url(images/content/product-item1.jpg);">
+
+                        <div class="product__item-block">
+                            <div class="product__item-buttons">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a> 
+                                </div>
+
+                        <a class="product__item-img" href="#">
+                            <img src="images/content/product-item1.jpg" alt="">
+
                         </a>
+                    </div>
+
                         <div class="product__item-content">
                             <div class="product__item-name">
 
@@ -840,8 +862,20 @@
 
 
                     <div class="product__item mix category-wordpress" data-order="2">
-                        <a class="product__item-img" href="#"
-                            style="background-image: url(images/content/product-item2.jpg);"></a>
+
+                             <div class="product__item-block">
+                            <div class="product__item-buttons">
+                                    <a href="#">More Info</a>
+                                    <a href="#">Live Demo</a> 
+                                </div>
+
+                        <a class="product__item-img" href="#">
+                            <img src="images/content/product-item1.jpg" alt="">
+
+                        </a>
+                    </div>
+
+
                         <div class="product__item-content">
                             <div class="product__item-name">
 
@@ -886,8 +920,17 @@
                     </div>
 
                     <div class="product__item mix category-joomla" data-order="3">
-                        <a class="product__item-img" href="#"
-                            style="background-image: url(images/content/product-item1.jpg);"></a>
+                            <div class="product__item-block">
+                                    <div class="product__item-buttons">
+                                            <a href="#">More Info</a>
+                                            <a href="#">Live Demo</a> 
+                                        </div>
+        
+                                <a class="product__item-img" href="#">
+                                    <img src="images/content/product-item1.jpg" alt="">
+        
+                                </a>
+                            </div>
                         <div class="product__item-content">
                             <div class="product__item-name">
 
@@ -932,8 +975,17 @@
                     </div>
 
                     <div class="product__item mix category-site" data-order="4">
-                        <a class="product__item-img" href="#"
-                            style="background-image: url(images/content/product-item1.jpg);"></a>
+                            <div class="product__item-block">
+                                    <div class="product__item-buttons">
+                                            <a href="#">More Info</a>
+                                            <a href="#">Live Demo</a> 
+                                        </div>
+        
+                                <a class="product__item-img" href="#">
+                                    <img src="images/content/product-item1.jpg" alt="">
+        
+                                </a>
+                            </div>
                         <div class="product__item-content">
                             <div class="product__item-name">
 
@@ -978,8 +1030,17 @@
                     </div>
 
                     <div class="product__item mix category-psd" data-order="5">
-                        <a class="product__item-img" href="#"
-                            style="background-image: url(images/content/product-item1.jpg);"></a>
+                            <div class="product__item-block">
+                                    <div class="product__item-buttons">
+                                            <a href="#">More Info</a>
+                                            <a href="#">Live Demo</a> 
+                                        </div>
+        
+                                <a class="product__item-img" href="#">
+                                    <img src="images/content/product-item1.jpg" alt="">
+        
+                                </a>
+                            </div>
                         <div class="product__item-content">
                             <div class="product__item-name">
 
@@ -1024,8 +1085,17 @@
                     </div>
 
                     <div class="product__item mix category-landing" data-order="6">
-                        <a class="product__item-img" href="#"
-                            style="background-image: url(images/content/product-item1.jpg);"></a>
+                            <div class="product__item-block">
+                                    <div class="product__item-buttons">
+                                            <a href="#">More Info</a>
+                                            <a href="#">Live Demo</a> 
+                                        </div>
+        
+                                <a class="product__item-img" href="#">
+                                    <img src="images/content/product-item1.jpg" alt="">
+        
+                                </a>
+                            </div>
                         <div class="product__item-content">
                             <div class="product__item-name">
 
@@ -1436,7 +1506,7 @@
 
             </div>
         </div>
-    </section>
+    </section>  
 
 
 
@@ -1649,7 +1719,7 @@
     </section>
 
 
-    <section class="reviews">
+     <section class="reviews">
         <div class="container">
 
 
@@ -1722,7 +1792,7 @@
             <a class="reviews-link" href="">View All Reviews</a>
 
         </div>
-    </section>
+    </section> 
 
     <section class="news">
         <div class="container">
@@ -1828,7 +1898,8 @@
             </div>
 
         </div>
-    </section>
+    </section> 
+
 
     <section class="guarantee">
         <div class="container">
@@ -1859,7 +1930,7 @@
                 <a href="#">Join Us Today</a>
             </div>
         </div>
-    </section>
+    </section>    
 
     <footer class="footer">
 
@@ -1993,7 +2064,7 @@
 
         </form>
 
-    </div>
+    </div> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js "></script>
